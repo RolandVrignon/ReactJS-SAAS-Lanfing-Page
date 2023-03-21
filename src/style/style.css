@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Roland";
+  src: url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_hf1KGlqM27q8T.eot");
+  src: url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_hf1KGlqM27q8T.eot?#iefix") format("embedded-opentype"), url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_1gmydpDg4W.woff2") format("woff2"), url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_0F0tdt2nqf.ttf") format("truetype"), url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_OS4KU8lTs.svg#oliverregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20vw;
+  background-color: #7601fd;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+.navbar.light-mode {
+  background-color: #ffffff;
+}
+.navbar.dark-mode {
+  background-color: #000000;
+}
+.navbar .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navbar .navbar-left {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-logo {
+  width: 60px;
+  height: auto;
+}
+.navbar .navbar-links {
+  display: flex;
+  list-style: none;
+  margin-left: 1rem;
+}
+.navbar .navbar-links.active {
+  display: block;
+}
+.navbar .navbar-links li {
+  margin-right: 1rem;
+}
+.navbar .navbar-links a {
+  text-decoration: none;
+}
+.navbar .navbar-links a.light-mode {
+  color: #11181c;
+}
+.navbar .navbar-links a.dark-mode {
+  color: #eceede;
+}
+.navbar .navbar-links a:hover {
+  color: #7601fd;
+}
+.navbar .navbar-right {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-right .login-link {
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.navbar .navbar-right .login-link.light-mode {
+  color: #11181c;
+}
+.navbar .navbar-right .login-link.dark-mode {
+  color: #eceede;
+}
+.navbar .navbar-right .login-link:hover {
+  color: #7601fd;
+}
+.navbar .navbar-right .trial-button {
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.navbar .navbar-right .trial-button.light-mode {
+  background-color: #c898ff;
+  color: #2f0065;
+}
+.navbar .navbar-right .trial-button.light-mode:hover {
+  background-color: #9133fe;
+}
+.navbar .navbar-right .trial-button.dark-mode {
+  background-color: #2f0065;
+  color: #c898ff;
+}
+.navbar .navbar-right .trial-button.dark-mode:hover {
+  background-color: #5e01ca;
+}
+.navbar .navbar-right .toggle-dark-mode {
+  background-color: transparent;
+  border: none;
+  color: #11181c;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.navbar .navbar-right .toggle-dark-mode:hover {
+  color: #7601fd;
+}
+.navbar .navbar-right .toggle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3vw;
+}
+.navbar .navbar-right .toggle-container .MuiSvgIcon-root.light-mode {
+  color: #11181c !important;
+}
+.navbar .navbar-right .toggle-container .MuiSvgIcon-root.dark-mode {
+  color: #eceede !important;
+}
+.navbar .navbar-right .toggle-container .toggle .Mui-checked {
+  color: #7601fd;
+}
+.navbar .navbar-right .toggle-container .toggle .MuiSwitch-track {
+  background-color: #e3cbff;
+}
+.navbar .menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: #11181c;
+  cursor: pointer;
+}
+.navbar .menu-toggle:hover {
+  color: #7601fd;
+}
+
+/*# sourceMappingURL=style.css.map */

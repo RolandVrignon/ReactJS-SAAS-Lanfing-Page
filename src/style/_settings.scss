@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Roland";
+  src: url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_hf1KGlqM27q8T.eot");
+  src: url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_hf1KGlqM27q8T.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_1gmydpDg4W.woff2")
+      format("woff2"),
+    url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_0F0tdt2nqf.ttf")
+      format("truetype"),
+    url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_OS4KU8lTs.svg#oliverregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+  
+// Couleurs Primaires
+$color-one: #7601fd;
+$color-two: #2a103e;
+$color-three: #e200f5;
+
+// Light Mode
+$light-titre : #11181c;
+$light-paragraphe: #687076;
+$light-lightgrey: #f1f3f5;
+$light-bg: #ffffff;
+
+// Dark Mode
+$dark-titre : #eceede;
+$dark-paragraphe: #9ba1ac;
+$dark-lightgrey: #16181a;
+$dark-bg: #000000;

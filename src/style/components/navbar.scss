@@ -1,0 +1,179 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20vw;
+  background-color: $color-one;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+
+  &.light-mode {
+    background-color: $light-bg;
+  }
+
+  &.dark-mode {
+    background-color: $dark-bg;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    width: 60px;
+    height: auto;
+  }
+
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin-left: 1rem;
+
+    &.active {
+      display: block;
+    }
+
+    li {
+      margin-right: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+
+      &.light-mode {
+        color: $light-titre;
+      }
+    
+      &.dark-mode {
+        color: $dark-titre;
+      }
+
+      &:hover {
+        color: $color-one;
+      }
+    }
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+
+    .login-link {
+      margin-right: 1rem;
+      text-decoration: none;
+      
+      &.light-mode {
+        color: $light-titre;
+      }
+    
+      &.dark-mode {
+        color: $dark-titre;
+      }
+
+      &:hover {
+        color: $color-one;
+      }
+    }
+
+    .trial-button {
+      border: none;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+
+      &.light-mode {
+        background-color: lighten($color-one, 30%);
+        color: darken($color-one, 30%);
+
+        &:hover {
+            background-color: lighten($color-one, 10%);
+        }
+      }
+    
+      &.dark-mode {
+        background-color: darken($color-one, 30%);
+        color: lighten($color-one, 30%);
+
+        &:hover {
+            background-color: darken($color-one, 10%);
+        }
+      }
+    }
+
+    .toggle-dark-mode {
+        background-color: transparent;
+        border: none;
+        color: $light-titre;
+        margin-left: 1rem;
+        cursor: pointer;
+  
+        &:hover {
+          color: $color-one;
+        }
+      }
+
+      .toggle-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 3vw;
+
+        .MuiSvgIcon-root {
+          &.light-mode {
+              color: $light-titre !important;
+          }
+          &.dark-mode {
+              color: $dark-titre !important;
+          }
+        }
+
+        .toggle{
+          .Mui-checked {
+            color: $color-one;
+          }
+          .MuiSwitch-track {
+            background-color: lighten($color-one, 40%);
+          }
+        }
+      }
+    }
+  
+    .menu-toggle {
+      display: none;
+      font-size: 2rem;
+      background-color: transparent;
+      border: none;
+      color: $light-titre;
+      cursor: pointer;
+  
+      &:hover {
+        color: $color-one;
+      }
+    }
+  }
+  
+  // @include xs {
+  //   .navbar {
+  //     .navbar-links {
+  //       display: none;
+  //     }
+  
+  //     .navbar-right {
+  //       display: none;
+  //     }
+  
+  //     .menu-toggle {
+  //       display: block;
+  //     }
+  //   }
+  // }
+  
