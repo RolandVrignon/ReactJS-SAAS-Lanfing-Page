@@ -10,7 +10,7 @@ const Home = ({ navbarHeight, darkMode }) => {
   };
 
   return (
-    <div className={`section home ${darkMode ? 'dark-mode' : 'light-mode'}`} style={{ height: `calc(100vh - ${navbarHeight}px)` }}>
+    <div className={`section home ${darkMode ? 'dark-mode' : 'light-mode'}`} style={{ minHeight: `calc(100vh - ${navbarHeight}px)` }}>
       <div className="home-left">
         <div className={`title ${darkMode ? 'dark-mode' : 'light-mode'}`}>
           <h1>The modern landing page for React developers</h1>
