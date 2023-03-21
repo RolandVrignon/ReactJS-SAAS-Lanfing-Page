@@ -1,11 +1,14 @@
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 20vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-color: $color-one;
   position: relative;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
+  z-index: 10;
 
   &.light-mode {
     background-color: $light-bg;
@@ -160,20 +163,15 @@
       }
     }
   }
-  
-  // @include xs {
-  //   .navbar {
-  //     .navbar-links {
-  //       display: none;
-  //     }
-  
-  //     .navbar-right {
-  //       display: none;
-  //     }
-  
-  //     .menu-toggle {
-  //       display: block;
-  //     }
-  //   }
-  // }
+
+  .navbar.light-mode::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* hauteur du dégradé */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    z-index: -1; /* pour placer l'élément derrière la navbar */
+  }
   

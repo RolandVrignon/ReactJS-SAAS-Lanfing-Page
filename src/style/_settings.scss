@@ -13,6 +13,22 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Tiempos";
+  src: url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/Tiempos/Regular/TiemposHeadline-Regular_5qhhSkP25.otf?updatedAt=1679415785902");
+  src: url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/Tiempos/Regular/TiemposHeadline-Regular_5qhhSkP25.otf?updatedAt=1679415785902")
+      format("embedded-opentype"),
+    url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/Tiempos/Regular/TiemposHeadline-Regular_g8k6ia8vz.woff2?updatedAt=1679416151710")
+      format("woff2"),
+    url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/Tiempos/Regular/TiemposHeadline-Regular_7R5Pei2Uo.ttf?updatedAt=1679416048629")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
   
 // Couleurs Primaires
 $color-one: #7601fd;
@@ -23,10 +39,10 @@ $color-three: #e200f5;
 $light-titre : #11181c;
 $light-paragraphe: #687076;
 $light-lightgrey: #f1f3f5;
-$light-bg: #ffffff;
+$light-bg: #fafafa;
 
 // Dark Mode
 $dark-titre : #eceede;
 $dark-paragraphe: #9ba1ac;
 $dark-lightgrey: #16181a;
-$dark-bg: #000000;
+$dark-bg: #111111;

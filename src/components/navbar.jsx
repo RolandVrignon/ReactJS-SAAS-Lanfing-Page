@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 import { Switch } from '@mui/material';
 import DarkModeRoundedIcon from '@mui/icons-material/DarkModeRounded';
 import LightModeRoundedIcon from '@mui/icons-material/LightModeRounded';
 
-const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+const Navbar = forwardRef(({ darkMode, setDarkMode }, ref) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleDarkMode = () => {
@@ -16,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+    <nav className={`section navbar ${darkMode ? 'dark-mode' : 'light-mode'}`} ref={ref}>
       <div className="navbar-container">
         <div className="navbar-left">
           { darkMode ? (
@@ -60,6 +59,6 @@ const Navbar = () => {
         </button>
     </nav>
   );
-};
+});
 
 export default Navbar;

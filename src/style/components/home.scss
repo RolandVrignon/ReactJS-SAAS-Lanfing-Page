@@ -1,0 +1,94 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+
+    &.dark-mode {
+        background-color: $dark-bg;
+    }
+
+    &.light-mode {
+        background-color: $light-bg;
+    }
+
+    .home-left{
+        flex : 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .title {
+            text-align: left;
+            font-size : 28px;
+
+            h1 {
+                font-family: 'Tiempos';
+            }
+
+            &.light-mode {
+                color: $light-titre;
+            }
+            &.dark-mode {
+                color: $dark-titre;
+            }
+        }
+
+        .text {
+            text-align: left;
+            font-size : 24px;
+
+            p {
+                font-family: 'inter';
+            }
+
+            &.light-mode {
+                color: $light-titre;
+            }
+            &.dark-mode {
+                color: $dark-titre;
+            }
+        }
+
+        .usp {
+            ul {
+                display: flex;
+                flex-direction: row;
+                padding: 0;
+                gap: 2vw;
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    text-decoration: none;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+
+                    .MuiSvgIcon-root {
+                        color: rgb(28, 233, 28) !important;
+                    }
+
+                    p {
+                        font-family: 'Inter';
+
+                        &.light-mode {
+                            color: $light-titre;
+                        }
+                        &.dark-mode {
+                            color: $dark-titre;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home-right{
+        flex : 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
