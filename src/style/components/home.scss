@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     z-index: 0;
+    gap : 10vw;
 
     &.dark-mode {
         background-color: $dark-bg;
@@ -19,6 +20,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        gap: 3vh;
 
         .title {
             text-align: left;
@@ -49,6 +51,48 @@
             }
             &.dark-mode {
                 color: $dark-titre;
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: row;
+            gap : 10px;
+            width: 80%;
+
+            input {
+                padding : 15px 10px;
+                border: none;
+                border-radius: 4px;
+                flex: 3;
+
+                &.dark-mode{
+                    background-color: lighten($dark-bg, 10%);
+                    color: $dark-titre;
+                }
+
+                &.light-mode {
+                    background-color: darken($light-bg, 10%);
+                    color: $light-titre;
+                }
+            }
+
+            button {
+                border: none;
+                border-radius: 4px;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                flex: 1;
+
+                &.dark-mode{
+                    background-color: $color-one;
+                    color: $dark-titre;
+                }
+
+                &.light-mode {
+                    background-color: $color-one;
+                    color: $dark-titre;
+                }
             }
         }
 
