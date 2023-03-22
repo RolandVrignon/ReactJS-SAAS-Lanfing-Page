@@ -2,6 +2,9 @@
 
 This project is built with React.js and SASS.
 
+![Image Alt Text](images/lp-dark-desktop.png)
+![Image Alt Text](images/lp-light-desktop.png)
+
 ## Installation
 This project is built with React.js and SASS.
 
