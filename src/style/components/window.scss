@@ -16,14 +16,6 @@
         border-radius: 10px 10px 0 0;
         padding: 1rem 0;
 
-        // &.light-mode{
-        //     background-color: darken($light-bg, 10%);
-        // }
-
-        // &.dark-mode {
-        //     background-color: lighten($dark-bg, 10%);
-        // }
-
         .left {
             flex: 1;
             display: flex;
@@ -79,15 +71,6 @@
                 @include xxl {
                     font-size: 20px;
                 }
-
-
-                // &.light-mode{
-                //     color: $light-titre;
-                // }
-
-                // &.dark-mode {
-                //     color: $dark-titre;
-                // }
             }
         }
 
@@ -113,6 +96,7 @@
     
         @include md {
             min-height: 50vh;
+            margin-bottom: 10vh;
         }
     
         @include xl {
@@ -122,14 +106,6 @@
         @include xxl {
             min-height: 50vh;
         }
-
-        // &.light-mode{
-        //     background-color: darken($light-bg, 20%);
-        // }
-
-        // &.dark-mode {
-        //     background-color: lighten($dark-bg, 20%);
-        // }
 
         .logo {
             flex: 1;
@@ -174,14 +150,6 @@
                     font-size: 18px;
                     line-height: 30px;
                 }
-
-                // &.light-mode{
-                //     color: $light-titre;
-                // }
-
-                // &.dark-mode {
-                //     color: #d1d5db;
-                // }
             }
         }
     }

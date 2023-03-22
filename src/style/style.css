@@ -182,12 +182,12 @@ h1, h2, h3, p, ul, li {
 }
 @media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
   h1 {
-    font-size: 20px;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   h1 {
-    font-size: 22px;
+    font-size: 3rem;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {
@@ -264,6 +264,11 @@ h1, h2, h3, p, ul, li {
   }
 }
 @media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .navbar .navbar-links {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .navbar .navbar-links {
     display: none;
   }
@@ -371,7 +376,7 @@ h1, h2, h3, p, ul, li {
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .home {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {
@@ -405,6 +410,11 @@ h1, h2, h3, p, ul, li {
     margin-top: 10vh;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .home .home-left .title {
+    margin-top: 10vh;
+  }
+}
 .home .home-left .title h1 {
   font-family: "Tiempos";
 }
@@ -425,12 +435,6 @@ h1, h2, h3, p, ul, li {
   border: none;
   border-radius: 4px;
   flex: 3;
-}
-.home .home-left .form input.dark-mode {
-  background-color: #2b2b2b;
-}
-.home .home-left .form input.light-mode {
-  background-color: #e1e1e1;
 }
 .home .home-left .form button {
   border: none;
@@ -595,6 +599,7 @@ h1, h2, h3, p, ul, li {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .window .content {
     min-height: 50vh;
+    margin-bottom: 10vh;
   }
 }
 @media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {

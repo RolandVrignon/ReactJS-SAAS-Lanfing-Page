@@ -40,6 +40,10 @@
         display: none;
     }
 
+    @include md {
+      display: none;
+  }
+
     &.active {
       display: block;
     }
