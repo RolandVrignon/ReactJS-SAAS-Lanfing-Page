@@ -1,27 +1,11 @@
 @font-face {
-  font-family: "Roland";
-  src: url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_hf1KGlqM27q8T.eot");
-  src: url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_hf1KGlqM27q8T.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_1gmydpDg4W.woff2")
-      format("woff2"),
-    url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_0F0tdt2nqf.ttf")
-      format("truetype"),
-    url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/oliver-regular-webfont_OS4KU8lTs.svg#oliverregular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Tiempos";
-  src: url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/Tiempos/Regular/TiemposHeadline-Regular_5qhhSkP25.otf?updatedAt=1679415785902");
-  src: url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/Tiempos/Regular/TiemposHeadline-Regular_5qhhSkP25.otf?updatedAt=1679415785902")
+  src: url("../assets/fonts/tiempos/TiemposHeadline-Regular_5qhhSkP25.otf");
+  src: url("../assets/fonts/tiempos/TiemposHeadline-Regular_5qhhSkP25.otf")
       format("embedded-opentype"),
-    url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/Tiempos/Regular/TiemposHeadline-Regular_g8k6ia8vz.woff2?updatedAt=1679416151710")
+    url("../assets/fonts/tiempos/TiemposHeadline-Regular_g8k6ia8vz.woff2")
       format("woff2"),
-    url("https://ik.imagekit.io/z0tzxea0wgx/Fonts/Tiempos/Regular/TiemposHeadline-Regular_7R5Pei2Uo.ttf?updatedAt=1679416048629")
+    url("../assets/fonts/tiempos/TiemposHeadline-Regular_7R5Pei2Uo.ttf")
       format("truetype");
   font-weight: normal;
   font-style: normal;
