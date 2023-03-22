@@ -1,6 +1,5 @@
 .home {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     z-index: 0;
@@ -14,6 +13,26 @@
         background-color: $light-bg;
     }
 
+    @include xs {
+        flex-direction: column;
+    }
+
+    @include sm {
+        flex-direction: column;
+    }
+
+    @include md {
+        flex-direction: row;
+    }
+
+    @include xl {
+        flex-direction: row;
+    }
+
+    @include xxl {
+        flex-direction: row;
+    }
+
     .home-left{
         flex : 1;
         display: flex;
@@ -24,7 +43,28 @@
 
         .title {
             text-align: left;
-            font-size : 28px;
+
+            @include xs {
+                margin-top: 10vh;
+                font-size : 18px;
+            }
+        
+            @include sm {
+                margin-top: 10vh;
+                font-size : 20px;
+            }
+        
+            @include md {
+                font-size : 22px;
+            }
+        
+            @include xl {
+                font-size : 24px;
+            }
+        
+            @include xxl {
+                font-size : 26px;
+            }
 
             h1 {
                 font-family: 'Tiempos';
@@ -40,7 +80,26 @@
 
         .text {
             text-align: left;
-            font-size : 24px;
+
+            @include xs {
+                font-size : 16px;
+            }
+        
+            @include sm {
+                font-size : 18px;
+            }
+        
+            @include md {
+                font-size : 20px;
+            }
+        
+            @include xl {
+                font-size : 22px;
+            }
+        
+            @include xxl {
+                font-size : 24px;
+            }
 
             p {
                 font-family: 'inter';
@@ -117,6 +176,26 @@
                     p {
                         font-family: 'Inter';
 
+                        @include xs {
+                            font-size : 10px;
+                        }
+                    
+                        @include sm {
+                            font-size : 12px;
+                        }
+                    
+                        @include md {
+                            font-size : 14px;
+                        }
+                    
+                        @include xl {
+                            font-size : 16px;
+                        }
+                    
+                        @include xxl {
+                            font-size : 18px;
+                        }
+
                         &.light-mode {
                             color: $light-titre;
                         }
@@ -134,5 +213,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
 }

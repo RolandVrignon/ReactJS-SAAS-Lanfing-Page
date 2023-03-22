@@ -40,6 +40,14 @@
     list-style: none;
     margin-left: 1rem;
 
+    @include xs {
+      display: none;
+    }
+
+    @include sm {
+        display: none;
+    }
+
     &.active {
       display: block;
     }
@@ -72,6 +80,14 @@
     .login-link {
       margin-right: 1rem;
       text-decoration: none;
+
+      @include xs {
+        display: none;
+      }
+  
+      @include sm {
+          display: none;
+      }
       
       &.light-mode {
         color: $light-titre;
@@ -91,6 +107,14 @@
       border-radius: 4px;
       padding: 0.5rem 1rem;
       cursor: pointer;
+
+      @include xs {
+        display: none;
+      }
+  
+      @include sm {
+          display: none;
+      }
 
       &.light-mode {
         background-color: lighten($color-one, 30%);

@@ -20,9 +20,35 @@ html, body {
   padding: 0;
 }
 
-.section {
-  padding-left: 15vw;
-  padding-right: 15vw;
+@media only screen and (max-device-width: 425px) {
+  .section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .section {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {
+  .section {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+@media only screen and (min-device-width: 1921px) {
+  .section {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
 }
 
 h1, h2, h3, p, ul, li {
@@ -67,6 +93,16 @@ h1, h2, h3, p, ul, li {
   list-style: none;
   margin-left: 1rem;
 }
+@media only screen and (max-device-width: 425px) {
+  .navbar .navbar-links {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .navbar .navbar-links {
+    display: none;
+  }
+}
 .navbar .navbar-links.active {
   display: block;
 }
@@ -93,6 +129,16 @@ h1, h2, h3, p, ul, li {
   margin-right: 1rem;
   text-decoration: none;
 }
+@media only screen and (max-device-width: 425px) {
+  .navbar .navbar-right .login-link {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .navbar .navbar-right .login-link {
+    display: none;
+  }
+}
 .navbar .navbar-right .login-link.light-mode {
   color: #11181c;
 }
@@ -107,6 +153,16 @@ h1, h2, h3, p, ul, li {
   border-radius: 4px;
   padding: 0.5rem 1rem;
   cursor: pointer;
+}
+@media only screen and (max-device-width: 425px) {
+  .navbar .navbar-right .trial-button {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .navbar .navbar-right .trial-button {
+    display: none;
+  }
 }
 .navbar .navbar-right .trial-button.light-mode {
   background-color: #c898ff;
@@ -176,7 +232,6 @@ h1, h2, h3, p, ul, li {
 
 .home {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   z-index: 0;
@@ -188,6 +243,31 @@ h1, h2, h3, p, ul, li {
 .home.light-mode {
   background-color: #fafafa;
 }
+@media only screen and (max-device-width: 425px) {
+  .home {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .home {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .home {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {
+  .home {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-device-width: 1921px) {
+  .home {
+    flex-direction: row;
+  }
+}
 .home .home-left {
   flex: 1;
   display: flex;
@@ -198,7 +278,33 @@ h1, h2, h3, p, ul, li {
 }
 .home .home-left .title {
   text-align: left;
-  font-size: 28px;
+}
+@media only screen and (max-device-width: 425px) {
+  .home .home-left .title {
+    margin-top: 10vh;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .home .home-left .title {
+    margin-top: 10vh;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .home .home-left .title {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {
+  .home .home-left .title {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-device-width: 1921px) {
+  .home .home-left .title {
+    font-size: 26px;
+  }
 }
 .home .home-left .title h1 {
   font-family: "Tiempos";
@@ -211,7 +317,31 @@ h1, h2, h3, p, ul, li {
 }
 .home .home-left .text {
   text-align: left;
-  font-size: 24px;
+}
+@media only screen and (max-device-width: 425px) {
+  .home .home-left .text {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .home .home-left .text {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .home .home-left .text {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {
+  .home .home-left .text {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-device-width: 1921px) {
+  .home .home-left .text {
+    font-size: 24px;
+  }
 }
 .home .home-left .text p {
   font-family: "inter";
@@ -277,6 +407,31 @@ h1, h2, h3, p, ul, li {
 .home .home-left .usp ul li p {
   font-family: "Inter";
 }
+@media only screen and (max-device-width: 425px) {
+  .home .home-left .usp ul li p {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .home .home-left .usp ul li p {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .home .home-left .usp ul li p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {
+  .home .home-left .usp ul li p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 1921px) {
+  .home .home-left .usp ul li p {
+    font-size: 18px;
+  }
+}
 .home .home-left .usp ul li p.light-mode {
   color: #11181c;
 }
@@ -288,6 +443,196 @@ h1, h2, h3, p, ul, li {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.window {
+  width: 100%;
+}
+@media only screen and (max-device-width: 425px) {
+  .window {
+    margin-top: 10vh;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .window {
+    margin-top: 10vh;
+  }
+}
+.window .topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+  padding: 1rem 0;
+}
+.window .topbar.light-mode {
+  background-color: #e1e1e1;
+}
+.window .topbar.dark-mode {
+  background-color: #2b2b2b;
+}
+.window .topbar .left {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 10px;
+  align-items: center;
+  gap: 8px;
+}
+.window .topbar .left .round {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.window .topbar .left .round#one {
+  background-color: #FF605A;
+}
+.window .topbar .left .round#two {
+  background-color: #FFBF31;
+}
+.window .topbar .left .round#three {
+  background-color: #27C840;
+}
+.window .topbar .left .round:hover {
+  cursor: pointer;
+}
+.window .topbar .center {
+  flex: 1;
+}
+.window .topbar .center p {
+  font-family: "Inter";
+}
+@media only screen and (max-device-width: 425px) {
+  .window .topbar .center p {
+    margin: 0 2vw;
+    font-size: 12px;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .window .topbar .center p {
+    margin: 0 2vw;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .window .topbar .center p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {
+  .window .topbar .center p {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-device-width: 1921px) {
+  .window .topbar .center p {
+    font-size: 20px;
+  }
+}
+.window .topbar .center p.light-mode {
+  color: #11181c;
+}
+.window .topbar .center p.dark-mode {
+  color: #eceede;
+}
+.window .topbar .right {
+  flex: 1;
+}
+.window .content {
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-device-width: 425px) {
+  .window .content {
+    min-height: 60vh;
+    margin-bottom: 10vh;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .window .content {
+    min-height: 60vh;
+    margin-bottom: 10vh;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .window .content {
+    min-height: 50vh;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {
+  .window .content {
+    min-height: 50vh;
+  }
+}
+@media only screen and (min-device-width: 1921px) {
+  .window .content {
+    min-height: 50vh;
+  }
+}
+.window .content.light-mode {
+  background-color: #c7c7c7;
+}
+.window .content.dark-mode {
+  background-color: #444444;
+}
+.window .content .logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3vh;
+}
+.window .content .logo img {
+  width: 70%;
+  height: auto;
+}
+.window .content .text {
+  flex: 4;
+  margin-right: 3vw;
+  margin-top: 4vh;
+}
+.window .content .text span {
+  font-family: "Inter";
+}
+@media only screen and (max-device-width: 425px) {
+  .window .content .text span {
+    line-height: 15px;
+    font-size: 12px;
+  }
+}
+@media only screen and (min-device-width: 426px) and (max-device-width: 767px) {
+  .window .content .text span {
+    line-height: 15px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .window .content .text span {
+    line-height: 30px;
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 5000px) {
+  .window .content .text span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media only screen and (min-device-width: 1921px) {
+  .window .content .text span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+.window .content .text span.light-mode {
+  color: #11181c;
+}
+.window .content .text span.dark-mode {
+  color: #d1d5db;
 }
 
 /*# sourceMappingURL=style.css.map */

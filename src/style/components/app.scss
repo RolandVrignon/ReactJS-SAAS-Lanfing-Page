@@ -4,8 +4,31 @@ html, body {
 }
 
 .section {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    @include xs {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    @include sm {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    @include md {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    @include xl {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+
+    @include xxl {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+    
 }
 
 h1, h2, h3, p, ul, li {

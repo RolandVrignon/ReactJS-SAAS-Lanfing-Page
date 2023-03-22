@@ -1,0 +1,188 @@
+.window {
+    width: 100%;
+
+    @include xs {
+        margin-top: 10vh;
+    }
+
+    @include sm {
+        margin-top: 10vh;
+    }
+
+    .topbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 10px 10px 0 0;
+        padding: 1rem 0;
+
+        &.light-mode{
+            background-color: darken($light-bg, 10%);
+        }
+
+        &.dark-mode {
+            background-color: lighten($dark-bg, 10%);
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-left: 10px;
+            align-items: center;
+            gap: 8px;
+
+            .round {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                &#one {
+                    background-color: #FF605A;
+                }
+                &#two {
+                    background-color: #FFBF31;
+                }
+                &#three {
+                    background-color: #27C840;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .center {
+            flex: 1;
+
+            p {
+                font-family: 'Inter';
+
+                @include xs {
+                    margin: 0 2vw;
+                    font-size: 12px;
+                }
+            
+                @include sm {
+                    margin: 0 2vw;
+                    font-size: 14px;
+                }
+            
+                @include md {
+                    font-size: 16px;
+                }
+            
+                @include xl {
+                    font-size: 18px;
+                }
+            
+                @include xxl {
+                    font-size: 20px;
+                }
+
+
+                &.light-mode{
+                    color: $light-titre;
+                }
+
+                &.dark-mode {
+                    color: $dark-titre;
+                }
+            }
+        }
+
+        .right {
+            flex: 1;
+        }   
+    }
+
+    .content {
+        border-radius: 0 0 10px 10px;
+        display: flex;
+        flex-direction: row;
+
+        @include xs {
+            min-height: 60vh;
+            margin-bottom: 10vh;
+        }
+    
+        @include sm {
+            min-height: 60vh;
+            margin-bottom: 10vh;
+        }
+    
+        @include md {
+            min-height: 50vh;
+        }
+    
+        @include xl {
+            min-height: 50vh;
+        }
+    
+        @include xxl {
+            min-height: 50vh;
+        }
+
+        &.light-mode{
+            background-color: darken($light-bg, 20%);
+        }
+
+        &.dark-mode {
+            background-color: lighten($dark-bg, 20%);
+        }
+
+        .logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 3vh;
+            img {
+                width: 70%;
+                height: auto;
+            }
+        }
+
+        .text {
+            flex: 4;
+            margin-right: 3vw;
+            margin-top: 4vh;
+            span {
+                font-family: 'Inter';
+
+                @include xs {
+                    line-height: 15px;
+                    font-size: 12px;
+                }
+            
+                @include sm {
+                    line-height: 15px;
+                    font-size: 14px;
+                }
+            
+                @include md {
+                    line-height: 30px;
+                    font-size: 16px;
+                }
+            
+                @include xl {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            
+                @include xxl {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+
+                &.light-mode{
+                    color: $light-titre;
+                }
+
+                &.dark-mode {
+                    color: #d1d5db;
+                }
+            }
+        }
+    }
+}
