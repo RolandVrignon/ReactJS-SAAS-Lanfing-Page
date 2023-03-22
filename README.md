@@ -2,7 +2,10 @@
 
 This project is built with React.js and SASS.
 
+# Dark Mode
 ![Image Alt Text](images/lp-dark-desktop.png)
+
+# Light Mode
 ![Image Alt Text](images/lp-light-dektop.png)
 
 ## Installation
