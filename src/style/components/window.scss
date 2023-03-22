@@ -16,13 +16,13 @@
         border-radius: 10px 10px 0 0;
         padding: 1rem 0;
 
-        &.light-mode{
-            background-color: darken($light-bg, 10%);
-        }
+        // &.light-mode{
+        //     background-color: darken($light-bg, 10%);
+        // }
 
-        &.dark-mode {
-            background-color: lighten($dark-bg, 10%);
-        }
+        // &.dark-mode {
+        //     background-color: lighten($dark-bg, 10%);
+        // }
 
         .left {
             flex: 1;
@@ -81,13 +81,13 @@
                 }
 
 
-                &.light-mode{
-                    color: $light-titre;
-                }
+                // &.light-mode{
+                //     color: $light-titre;
+                // }
 
-                &.dark-mode {
-                    color: $dark-titre;
-                }
+                // &.dark-mode {
+                //     color: $dark-titre;
+                // }
             }
         }
 
@@ -123,13 +123,13 @@
             min-height: 50vh;
         }
 
-        &.light-mode{
-            background-color: darken($light-bg, 20%);
-        }
+        // &.light-mode{
+        //     background-color: darken($light-bg, 20%);
+        // }
 
-        &.dark-mode {
-            background-color: lighten($dark-bg, 20%);
-        }
+        // &.dark-mode {
+        //     background-color: lighten($dark-bg, 20%);
+        // }
 
         .logo {
             flex: 1;
@@ -175,13 +175,13 @@
                     line-height: 30px;
                 }
 
-                &.light-mode{
-                    color: $light-titre;
-                }
+                // &.light-mode{
+                //     color: $light-titre;
+                // }
 
-                &.dark-mode {
-                    color: #d1d5db;
-                }
+                // &.dark-mode {
+                //     color: #d1d5db;
+                // }
             }
         }
     }

@@ -5,18 +5,10 @@
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: $color-one;
+  background-color: $primary-color;
   position: relative;
   font-family: 'Inter';
   z-index: 10;
-
-  &.light-mode {
-    background-color: $light-bg;
-  }
-
-  &.dark-mode {
-    background-color: $dark-bg;
-  }
 
   .navbar-container {
     display: flex;
@@ -58,18 +50,6 @@
 
     a {
       text-decoration: none;
-
-      &.light-mode {
-        color: $light-titre;
-      }
-    
-      &.dark-mode {
-        color: $dark-titre;
-      }
-
-      &:hover {
-        color: $color-one;
-      }
     }
   }
 
@@ -88,18 +68,6 @@
       @include sm {
           display: none;
       }
-      
-      &.light-mode {
-        color: $light-titre;
-      }
-    
-      &.dark-mode {
-        color: $dark-titre;
-      }
-
-      &:hover {
-        color: $color-one;
-      }
     }
 
     .trial-button {
@@ -115,24 +83,6 @@
       @include sm {
           display: none;
       }
-
-      &.light-mode {
-        background-color: lighten($color-one, 30%);
-        color: darken($color-one, 30%);
-
-        &:hover {
-            background-color: lighten($color-one, 10%);
-        }
-      }
-    
-      &.dark-mode {
-        background-color: darken($color-one, 30%);
-        color: lighten($color-one, 30%);
-
-        &:hover {
-            background-color: darken($color-one, 10%);
-        }
-      }
     }
 
     .toggle-dark-mode {
@@ -143,7 +93,7 @@
         cursor: pointer;
   
         &:hover {
-          color: $color-one;
+          color: $primary-color;
         }
       }
 
@@ -165,10 +115,10 @@
 
         .toggle{
           .Mui-checked {
-            color: $color-one;
+            color: $primary-color;
           }
           .MuiSwitch-track {
-            background-color: lighten($color-one, 40%);
+            background-color: lighten($primary-color, 40%);
           }
         }
       }
@@ -183,19 +133,8 @@
       cursor: pointer;
   
       &:hover {
-        color: $color-one;
+        color: $primary-color;
       }
     }
-  }
-
-  .navbar.light-mode::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 60px; /* hauteur du dégradé */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
-    z-index: -1; /* pour placer l'élément derrière la navbar */
   }
   

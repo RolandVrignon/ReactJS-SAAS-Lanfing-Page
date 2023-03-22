@@ -3,6 +3,142 @@ html, body {
     padding: 0;
 }
 
+.App {
+    &.light-mode {
+        h1 {
+            color: $light-titre;
+            span {
+                color: $primary-color;
+            }
+        }
+        p {
+            color: $light-paragraphe;
+        }
+        input {
+            color: $light-titre;
+        }
+        button {
+            background-color: $primary-color;
+            color: $dark-titre;
+        }
+        .section {
+            background-color: $light-bg;
+        }
+        .navbar {
+            background-color: $light-bg;
+        }
+        .navbar::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 60px; /* hauteur du dégradé */
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+            z-index: -1;
+        }
+        a {
+            color: $light-titre;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        .login-link {
+            color: $light-titre;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        .trial-button {
+            background-color: lighten($primary-color, 30%);
+            color: darken($primary-color, 30%);
+    
+            &:hover {
+                background-color: lighten($primary-color, 10%);
+            }
+        }
+        .window{
+            .topbar {
+                background-color: darken($light-bg, 10%);
+            }
+            .content {
+                background-color: darken($light-bg, 20%);
+            }
+        }
+        span {
+            color: $light-titre;
+        }
+        form {
+            input {
+                background-color: darken($light-bg, 10%);
+                color: $light-titre;
+            }
+        }
+    }
+
+    &.dark-mode {
+        h1 {
+            color: $dark-titre;
+                span {
+                    color: $primary-color;
+                }
+        }
+        p {
+            color: $dark-paragraphe;
+        }
+        input {
+            color: $dark-titre;
+        }
+        button {
+            background-color: $primary-color;
+            color: $dark-titre;
+        }
+        .section {
+            background-color: $dark-bg;
+        }
+        .navbar {
+            background-color: $dark-bg;
+        }
+        a {
+            color: $dark-titre;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        .login-link {
+            color: $dark-titre;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        .trial-button {
+            background-color: darken($primary-color, 30%);
+            color: lighten($primary-color, 30%);
+    
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+        .window{
+            .topbar {
+                background-color: lighten($dark-bg, 10%);
+            }
+            .content {
+                background-color: lighten($dark-bg, 20%);
+            }
+        }
+        span {
+            color: #d1d5db;
+        }
+        form {
+            input {
+                background-color: lighten($dark-bg, 10%);
+                color: $dark-titre;
+            }
+        }
+    }
+}
+
 .section {
     @include xs {
         padding-left: 5vw;
@@ -34,4 +170,48 @@ html, body {
 h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    @include xs {
+        font-size : 2.5rem;
+    }
+
+    @include sm {
+        font-size : 20px;
+    }
+
+    @include md {
+        font-size : 22px;
+    }
+
+    @include xl {
+        font-size : 3.5rem;
+    }
+
+    @include xxl {
+        font-size : 4rem;
+    }
+}
+
+p {
+    @include xs {
+        font-size : 1rem;
+    }
+
+    @include sm {
+        font-size : 1rem;
+    }
+
+    @include md {
+        font-size : 1.5rem;
+    }
+
+    @include xl {
+        font-size : 1.5rem;
+    }
+
+    @include xxl {
+        font-size : 24px;
+    }
 }

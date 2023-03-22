@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Window = ({ darkMode }) => {
     const phrases = [
-        `Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.\nFue popularizado en los 60s con la creación de las hojas`,
+        `En tant que modèle de langage de grande envergure, je suis utile pour répondre à des questions, générer du contenu, assister à la recherche, corriger des textes, automatiser des tâches, ou aider à l'apprentissage. En résumé, grâce à ma capacité à comprendre et à générer du langage naturel, je suis un outil polyvalent qui peut être utilisé dans de nombreuses situations où il y a besoin d'une aide pour le traitement de texte ou pour l'analyse de données textuelles.`,
         `Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles.`,
         `El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.`
     ];
@@ -20,7 +20,7 @@ const Window = ({ darkMode }) => {
           timeout = setTimeout(() => {
             setIsAdding(false);
             setIsFinished(false);
-          }, 2000);
+          }, 5000);
         } else if (isDeleted) {
           timeout = setTimeout(() => {
             setIsAdding(true);
@@ -60,25 +60,25 @@ const Window = ({ darkMode }) => {
     
     return (
         <div className="window">
-            <div className={`topbar ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+            <div className="topbar">
             <div className="left">
                 <div className="round" id="one"></div>
                 <div className="round" id="two"></div>
                 <div className="round" id="three"></div>
             </div>
             <div className="center">
-                <p className={`${darkMode ? 'dark-mode' : 'light-mode'}`}>https://chat.openai.com/</p>
+                <p>https://chat.openai.com/</p>
             </div>
             <div className="right">
 
             </div>
             </div>
-            <div className={`content ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+            <div className="content">
                 <div className="logo">
                     <img src="https://ik.imagekit.io/z0tzxea0wgx/Cogitum/gpt_ledSyzPnn?updatedAt=1679435742407" alt="gpt" />
                 </div>
                 <div className="text">
-                    <span className={`${darkMode ? 'dark-mode' : 'light-mode'}`}>{formattedPhrase}</span>
+                    <span>{formattedPhrase}</span>
                 </div>
             </div>
         </div>

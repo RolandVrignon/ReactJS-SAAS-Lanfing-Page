@@ -15,7 +15,7 @@ const Navbar = forwardRef(({ darkMode, setDarkMode }, ref) => {
   };
 
   return (
-    <nav className={`section navbar ${darkMode ? 'dark-mode' : 'light-mode'}`} ref={ref}>
+    <nav className="section navbar" ref={ref}>
       <div className="navbar-container">
         <div className="navbar-left">
           { darkMode ? (
@@ -26,19 +26,19 @@ const Navbar = forwardRef(({ darkMode, setDarkMode }, ref) => {
           }
           <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
             <li>
-              <a className={`${darkMode ? 'dark-mode' : 'light-mode'}`}href="/">Accueil</a>
+              <a href="/">Accueil</a>
             </li>
             <li>
-              <a className={`${darkMode ? 'dark-mode' : 'light-mode'}`}href="/about">À propos</a>
+              <a href="/about">À propos</a>
             </li>
             <li>
-              <a className={`${darkMode ? 'dark-mode' : 'light-mode'}`}href="/contact">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </div>
         <div className="navbar-right">
-          <a href="/login" className={`login-link ${darkMode ? 'dark-mode' : 'light-mode'}`}>Login</a>
-          <button className={`trial-button ${darkMode ? 'dark-mode' : 'light-mode'}`}>Démarrer l'essai</button>
+          <a href="/login" className="login-link" >Login</a>
+          <button className="trial-button" >Démarrer l'essai</button>
           <div className="toggle-container">
             { darkMode ? (
               <LightModeRoundedIcon className="iconColor dark-mode"/>

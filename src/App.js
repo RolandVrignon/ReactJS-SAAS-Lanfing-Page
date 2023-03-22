@@ -13,7 +13,7 @@ function App() {
   }, [navbarRef]);
 
   return (
-    <div className="App">
+    <div className={`App ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} ref={navbarRef} />
       <Home navbarHeight={navbarHeight} darkMode={darkMode} />
     </div>

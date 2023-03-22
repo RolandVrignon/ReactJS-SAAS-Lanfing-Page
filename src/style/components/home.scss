@@ -5,14 +5,6 @@
     z-index: 0;
     gap : 10vw;
 
-    &.dark-mode {
-        background-color: $dark-bg;
-    }
-
-    &.light-mode {
-        background-color: $light-bg;
-    }
-
     @include xs {
         flex-direction: column;
     }
@@ -46,70 +38,22 @@
 
             @include xs {
                 margin-top: 10vh;
-                font-size : 18px;
             }
         
             @include sm {
                 margin-top: 10vh;
-                font-size : 20px;
-            }
-        
-            @include md {
-                font-size : 22px;
-            }
-        
-            @include xl {
-                font-size : 24px;
-            }
-        
-            @include xxl {
-                font-size : 26px;
             }
 
             h1 {
                 font-family: 'Tiempos';
-            }
-
-            &.light-mode {
-                color: $light-titre;
-            }
-            &.dark-mode {
-                color: $dark-titre;
             }
         }
 
         .text {
             text-align: left;
 
-            @include xs {
-                font-size : 16px;
-            }
-        
-            @include sm {
-                font-size : 18px;
-            }
-        
-            @include md {
-                font-size : 20px;
-            }
-        
-            @include xl {
-                font-size : 22px;
-            }
-        
-            @include xxl {
-                font-size : 24px;
-            }
-
             p {
                 font-family: 'inter';
-            }
-
-            &.light-mode {
-                color: $light-titre;
-            }
-            &.dark-mode {
-                color: $dark-titre;
             }
         }
 
@@ -117,7 +61,7 @@
             display: flex;
             flex-direction: row;
             gap : 10px;
-            width: 80%;
+            width: 100%;
 
             input {
                 padding : 15px 10px;
@@ -127,12 +71,11 @@
 
                 &.dark-mode{
                     background-color: lighten($dark-bg, 10%);
-                    color: $dark-titre;
+                    
                 }
 
                 &.light-mode {
                     background-color: darken($light-bg, 10%);
-                    color: $light-titre;
                 }
             }
 
@@ -142,16 +85,6 @@
                 padding: 0.5rem 1rem;
                 cursor: pointer;
                 flex: 1;
-
-                &.dark-mode{
-                    background-color: $color-one;
-                    color: $dark-titre;
-                }
-
-                &.light-mode {
-                    background-color: $color-one;
-                    color: $dark-titre;
-                }
             }
         }
 
@@ -194,13 +127,6 @@
                     
                         @include xxl {
                             font-size : 18px;
-                        }
-
-                        &.light-mode {
-                            color: $light-titre;
-                        }
-                        &.dark-mode {
-                            color: $dark-titre;
                         }
                     }
                 }
